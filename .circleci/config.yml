@@ -4,7 +4,7 @@
     build:
       docker:
         - image: circleci/python:3.7
-      working_directory: ~/devops
+      working_directory: /home/andreead0/devops/devops3
       steps:
                   # Obtain repo from the GitHub
         - checkout
