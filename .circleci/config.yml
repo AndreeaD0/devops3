@@ -4,7 +4,7 @@
     build:
       docker:
         - image: circleci/python:3.7
-      working_directory: /AndreeaD0/devops3
+      working_directory: ~/devops3
       steps:
                   # Obtain repo from the GitHub
         - checkout
@@ -14,7 +14,7 @@
             command: |
               python3 -m venv venv
               . venv/bin/activate
-              pip install -r /AndreeaD0/devops3/requirements.txt
+              pip install -r requirements.txt
                   # Run coding convention software plus tester
         - run:
             name: run tests
