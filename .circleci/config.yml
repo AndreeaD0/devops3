@@ -19,8 +19,10 @@ jobs:
           command: |
             echo Hello, World!
             ls -l requirements.txt
+            pwd
+            cat howcome.txt
 
-# Invoke jobs via workflows
+#  Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
